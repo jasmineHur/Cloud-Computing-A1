@@ -1,0 +1,43 @@
+.seatgeek-container {
+  float: left;
+  position: absolute;
+  z-index: 1000;
+  height: 100%;
+  max-width: 495px;
+}
+
+.seatgeek-sub-container {
+  text-align: center;
+  height: 100%;
+}
+
+.seatgeek-container-inner {
+  margin-bottom: 13px;
+}
+
+.seatgeek-selectbox {
+  height: 37px;
+  width: 200px;
+  margin-right: 10px;
+}
+.seatgeek-p {
+  display: inline;
+}
+
+.seatgeek-events-container {
+  border: 1px solid;
+  border-color: #71858f;
+}
+
+.seatgeek-events-img {
+  width: 150px;
+}
+
+.seatgeek-table-row {
+  text-align: initial;
+  vertical-align: middle;
+}
+
+.seatgeek-table-p {
+  margin: 0px;
+}

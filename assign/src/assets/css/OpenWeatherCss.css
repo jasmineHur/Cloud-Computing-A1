@@ -1,0 +1,10 @@
+.openweather-p {
+  margin: 0px;
+}
+
+.openweather-div {
+  display: inline-block;
+  border: 1px solid;
+  width: 20%;
+  border-color: cadetblue;
+}
