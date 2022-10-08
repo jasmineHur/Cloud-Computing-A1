@@ -76,9 +76,13 @@ const SeatGeekData = ({}) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.status === 500) {
-          console.log(res.status);
+          toast.error(`${res.status}`, {
+            position: toast.POSITION.TOP_CENTER,
+          });
         } else if (res.status === 403) {
-          console.log(res.status);
+          toast.error(`${res.status}`, {
+            position: toast.POSITION.TOP_CENTER,
+          });
         } else {
           // store datas and show map use state will be true
           setSeatGeekAPIData(res);

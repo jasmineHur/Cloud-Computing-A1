@@ -107,9 +107,32 @@ app.use((req, res, next) => {
 
 // send the error page
 app.use((err, req, res, next) => {
-  res.sendFile(path.join(__dirname, "/routes/pages/pageError.html"));
+  res.writeHead(404, { "content-type": "text/html" });
+  res.write(errorPage);
+  res.end();
 });
 
 http.listen(port, () => {
   console.log(`Listening on ${host}:${port}`);
 });
+
+errorPage = `<html>
+<head>
+  <title>Express HTML</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin:100px;">
+  <div class="container">
+  </div>
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h1>Something went wrong!</h1>
+      <p>Please go back to root page</p>
+    </div>
+  </div>
+</body>
+</html>`;

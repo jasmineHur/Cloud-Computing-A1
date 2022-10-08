@@ -13,10 +13,14 @@ router.get("/", function (req, res, next) {
   axios
     .get(weather_endpoint)
     .then((response) => {
-      res.json({ data: response.data.list });
+      if (response.status == 200) {
+        res.json({ data: response.data.list });
+      }
     })
     .catch((error) => {
-      console.log(error);
+      if (error.response.data.status == 403) {
+        next(error);
+      }
     });
 });
 
