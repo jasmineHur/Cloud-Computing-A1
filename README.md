@@ -4,10 +4,10 @@
 <br />
 <div align="center">
   <a>
-    <img src="/src/assets/img/head.jpg" alt="Logo">
+    <img src="/images/Logo.png" alt="Logo"/>
   </a>
 
-  <h3 align="center">Happiniess Web Application (CAB230)</h3>
+  <h3 align="center">API Web Application (CAB432)</h3>
   <h6> Please note: This project is not compatible with some npms(react-select/react-chartjs-2), needs to update </h6>
 </div>
 
@@ -29,10 +29,10 @@
     </li>
     <li><a href="#architecture">Architecture</a></li>
     <ul>
-        <li><a href="#breakdown">Technical breakdown</a></li>
+        <li><a href="#technical-breakdown">Technical breakdown</a></li>
     </ul>
     <ul>
-        <li><a href="#flow">Data Flow</a></li>
+        <li><a href="#data-Flow">Data Flow</a></li>
     </ul>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#license">License</a></li>
@@ -44,7 +44,7 @@
 
 ## About The Project
 
-<img src="/src/assets/img/main.jpg" alt="Logo"/>
+<img src="/images/Mainpage.png" />
 
 This project is an application that shows events in USA by category. Especially, people who like sports go to other countries to watch the game in person, and it is an application for those people. Using the SeatGeek API and the Leaflet API to search for event types, Leaflet shows where the game takes place on the map. Use the Openweather API to display the weather within 5 days and users can bring raincoats to the stadium if there is rainy.
 
