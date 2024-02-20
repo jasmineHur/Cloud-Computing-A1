@@ -84,7 +84,7 @@ This is an example of how to list things you need to use the software and how to
   - In Local (For M1 ChipSet)
 
   ```sh
-  docker build --platform=linux/amd64 -t jasminehur238/demo .
+  docker build --platform=linux/amd64 -t YOUR_DIRECTORY_AND_IMAGE .
   docker images
   docker logout
   docker login
@@ -97,14 +97,14 @@ This is an example of how to list things you need to use the software and how to
   sudo docker login
   sudo docker pull jasminehur238/demo
 
-  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY=" YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t jasminehur238/demo
+  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY=" YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t YOUR_DIRECTORY_AND_IMAGE
 
   docker build --platform=linux/amd64 -t jasminehur238/final1 .
 
   sudo docker login
   sudo docker pull jasminehur238/final1
 
-  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY="YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t jasminehur238/final1
+  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY="YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t YOUR_DIRECTORY_AND_IMAGE
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
