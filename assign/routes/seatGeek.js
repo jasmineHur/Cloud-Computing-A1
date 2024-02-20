@@ -3,10 +3,7 @@ const router = express.Router();
 const axios = require("axios");
 // const e = require("express");
 const SEATGEEK_URL = "https://api.seatgeek.com/2/events";
-// const CLIENT_ID = "Mjg1ODA0NTZ8MTY2MTA3MDAzNy4zMTE2OTcy";
 const CLIENT_ID = process.env.SEATGEEK_API_KEY;
-// const CLIENT_SECRET =
-//   "ab4bb9ed60ccdf39c486760b29e4a00646a24007f6cc091e4d88399bcac39e38";
 const CLIENT_SECRET = process.env.SEATGEEK_SECRET_API_KEY;
 const PER_PAGE = 4;
 
