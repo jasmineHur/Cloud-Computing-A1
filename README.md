@@ -8,8 +8,7 @@
   </a>
 
   <h3 align="center">API Web Application (CAB432)</h3>
-  <h6> Please note: This project is not compatible with some npms(react-select/react-chartjs-2), needs to update </h6>
-</div>
+  </div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -56,7 +55,9 @@ This project is an application that shows events in USA by category. Especially,
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 - [![NodeJS][Node-js]][Node-url]
 - [![JS][JS]][JS-url]
+- [![AWS][AWS]][AWS-url]
 - [![Docker][Docker]][Docker-url]
+- [![Ubuntu][Ubuntu]][Ubuntu-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,10 +81,10 @@ This is an example of how to list things you need to use the software and how to
 
 - docker
 
-  - In Local
+  - In Local (For M1 ChipSet)
 
   ```sh
-  docker build --platform=linux/amd64 -t jasminehur238/demo . //for m1
+  docker build --platform=linux/amd64 -t jasminehur238/demo .
   docker images
   docker logout
   docker login
@@ -96,14 +97,14 @@ This is an example of how to list things you need to use the software and how to
   sudo docker login
   sudo docker pull jasminehur238/demo
 
-  sudo docker run -e AWS_ACCESS_KEY_ID="ASIA5DYSEEJ44ZP2EEFK" -e AWS_SECRET_ACCESS_KEY="xmJtmHRbuoORJIyLfoPaROcOSPvSY6QOb5A6FFhH" -e AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEEMaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAMAr1Sxwi3vZnMxf4dIC+fd50XmIu/+jBLF+KW110oFhAiEAmNzJXMrd3YnLOXu4T1Og/+4KKAuutROchQBHGcHRIJ8quQMI/P//////////ARACGgw5MDE0NDQyODA5NTMiDHd73pXN7gMkG8zKEiqNA+XsJTId0bU1azfEoLNKpM9sxUnzIScUgcOZTrarIXMlRBV1n7sJK3geWBuWUSQdOiSbi4ku9hpW54yrSFza0PfiVdGaaCu3jHYl+jgWJFMGPH4JQ5L5c3OX4WTkDwQL/J7stvCi/l+/sT7u95CosZlO6pK8wyfY2OFjopFo39R7mu0eKWON7uotfJt13P4ELorD/Qbh4WetvG2Z83T7OfbwxFBsafbM8nPY4pT85SIir5tu5lNRJdWmcVKiWqZbugq27ySXP5SOFprNv25uA/JAcraZE6dZ5CdqN7tIy8nw0cIqw4ICVYbPXQQ2j8ybtQP3vuB95x5u0na2CAQr1qRnXcaqhLYyIWtSvL6xIF2EZFodFAl+VZt3crHEZ7wzCz1T9dB6y2DcaXL2CBMyMOgdTLZpTDcarCiiPmesYargKct4GS12PR8jpTeMtEa2pmWl0dAQAqz2VN9+soBeEYyADNyZwg46T7m+7CxnXXKkM1Ot+OEQrKgP8pOvMFkhPrnCx9HXt/zRYFSBKDkwwKn+mQY6pQH9P+J52l7G/RDCphou0Gm+uQ62pFD8jZL6Eiv9Pb659kpqhR3TGRpJdKNlQDQVL5kHJwmnlVYddTHBVfgVb7LQk3rhAHxJvFJMhLoFMtKWHWye0KjLzh6S3XVuWn4p7KcDCHABbxvbqh++lEjNvsQOeyUJC+/lVp6Sc9ogYgJXdhh7mHMMFznXkjnRL753OzMZS9i/zxCa/Ka+/oML75lOE/j1QPg=" -e SEATGEEK_API_KEY="Mjg1ODA0NTZ8MTY2MTA3MDAzNy4zMTE2OTcy" -e SEATGEEK_SECRET_API_KEY="ab4bb9ed60ccdf39c486760b29e4a00646a24007f6cc091e4d88399bcac39e38" -e OPENWEATHER_API_KEY="90a5fcdbfe63a6a832b34063adbbee98" -p 3000:3000 --platform linux/amd64 -t jasminehur238/demo
+  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY=" YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t jasminehur238/demo
 
   docker build --platform=linux/amd64 -t jasminehur238/final1 .
 
   sudo docker login
   sudo docker pull jasminehur238/final1
 
-  sudo docker run -e AWS_ACCESS_KEY_ID="ASIA5DYSEEJ44ZP2EEFK" -e AWS_SECRET_ACCESS_KEY="xmJtmHRbuoORJIyLfoPaROcOSPvSY6QOb5A6FFhH" -e AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEEMaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAMAr1Sxwi3vZnMxf4dIC+fd50XmIu/+jBLF+KW110oFhAiEAmNzJXMrd3YnLOXu4T1Og/+4KKAuutROchQBHGcHRIJ8quQMI/P//////////ARACGgw5MDE0NDQyODA5NTMiDHd73pXN7gMkG8zKEiqNA+XsJTId0bU1azfEoLNKpM9sxUnzIScUgcOZTrarIXMlRBV1n7sJK3geWBuWUSQdOiSbi4ku9hpW54yrSFza0PfiVdGaaCu3jHYl+jgWJFMGPH4JQ5L5c3OX4WTkDwQL/J7stvCi/l+/sT7u95CosZlO6pK8wyfY2OFjopFo39R7mu0eKWON7uotfJt13P4ELorD/Qbh4WetvG2Z83T7OfbwxFBsafbM8nPY4pT85SIir5tu5lNRJdWmcVKiWqZbugq27ySXP5SOFprNv25uA/JAcraZE6dZ5CdqN7tIy8nw0cIqw4ICVYbPXQQ2j8ybtQP3vuB95x5u0na2CAQr1qRnXcaqhLYyIWtSvL6xIF2EZFodFAl+VZt3crHEZ7wzCz1T9dB6y2DcaXL2CBMyMOgdTLZpTDcarCiiPmesYargKct4GS12PR8jpTeMtEa2pmWl0dAQAqz2VN9+soBeEYyADNyZwg46T7m+7CxnXXKkM1Ot+OEQrKgP8pOvMFkhPrnCx9HXt/zRYFSBKDkwwKn+mQY6pQH9P+J52l7G/RDCphou0Gm+uQ62pFD8jZL6Eiv9Pb659kpqhR3TGRpJdKNlQDQVL5kHJwmnlVYddTHBVfgVb7LQk3rhAHxJvFJMhLoFMtKWHWye0KjLzh6S3XVuWn4p7KcDCHABbxvbqh++lEjNvsQOeyUJC+/lVp6Sc9ogYgJXdhh7mHMMFznXkjnRL753OzMZS9i/zxCa/Ka+/oML75lOE/j1QPg=" -e SEATGEEK_API_KEY="Mjg1ODA0NTZ8MTY2MTA3MDAzNy4zMTE2OTcy" -e SEATGEEK_SECRET_API_KEY="ab4bb9ed60ccdf39c486760b29e4a00646a24007f6cc091e4d88399bcac39e38" -e OPENWEATHER_API_KEY="90a5fcdbfe63a6a832b34063adbbee98" -p 3000:3000 --platform linux/amd64 -t jasminehur238/final1
+  sudo docker run -e AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY" -e AWS_SESSION_TOKEN="YOUR_SESSION_TOKEN" -e SEATGEEK_API_KEY="YOUR_API_KEY" -e SEATGEEK_SECRET_API_KEY="YOUR_API_SECRER_KEY" -e OPENWEATHER_API_KEY="YOUR_API_KEY" -p 3000:3000 --platform linux/amd64 -t jasminehur238/final1
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -196,24 +197,7 @@ Other Projects: [https://github.com/jasmineHur?tab=repositories](https://github.
 [Swagger]: https://swagger.io/
 [Docker]: https://img.shields.io/badge/Docker-384d54?style=for-the-badge&logo=docker
 [Docker-url]: https://www.docker.com/
-
-<!-- in Local
-docker build --platform=linux/amd64 -t jasminehur238/demo . //for m1
-docker images
-docker logout
-docker login
-and push to AWS in docker
-
-in AWS
-sudo curl -fsSL https://get.docker.com/ | sh
-sudo docker login
-sudo docker pull jasminehur238/demo
-
-sudo docker run -e AWS_ACCESS_KEY_ID="ASIA5DYSEEJ44ZP2EEFK" -e AWS_SECRET_ACCESS_KEY="xmJtmHRbuoORJIyLfoPaROcOSPvSY6QOb5A6FFhH" -e AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEEMaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAMAr1Sxwi3vZnMxf4dIC+fd50XmIu/+jBLF+KW110oFhAiEAmNzJXMrd3YnLOXu4T1Og/+4KKAuutROchQBHGcHRIJ8quQMI/P//////////ARACGgw5MDE0NDQyODA5NTMiDHd73pXN7gMkG8zKEiqNA+XsJTId0bU1azfEoLNKpM9sxUnzIScUgcOZTrarIXMlRBV1n7sJK3geWBuWUSQdOiSbi4ku9hpW54yrSFza0PfiVdGaaCu3jHYl+jgWJFMGPH4JQ5L5c3OX4WTkDwQL/J7stvCi/l+/sT7u95CosZlO6pK8wyfY2OFjopFo39R7mu0eKWON7uotfJt13P4ELorD/Qbh4WetvG2Z83T7OfbwxFBsafbM8nPY4pT85SIir5tu5lNRJdWmcVKiWqZbugq27ySXP5SOFprNv25uA/JAcraZE6dZ5CdqN7tIy8nw0cIqw4ICVYbPXQQ2j8ybtQP3vuB95x5u0na2CAQr1qRnXcaqhLYyIWtSvL6xIF2EZFodFAl+VZt3crHEZ7wzCz1T9dB6y2DcaXL2CBMyMOgdTLZpTDcarCiiPmesYargKct4GS12PR8jpTeMtEa2pmWl0dAQAqz2VN9+soBeEYyADNyZwg46T7m+7CxnXXKkM1Ot+OEQrKgP8pOvMFkhPrnCx9HXt/zRYFSBKDkwwKn+mQY6pQH9P+J52l7G/RDCphou0Gm+uQ62pFD8jZL6Eiv9Pb659kpqhR3TGRpJdKNlQDQVL5kHJwmnlVYddTHBVfgVb7LQk3rhAHxJvFJMhLoFMtKWHWye0KjLzh6S3XVuWn4p7KcDCHABbxvbqh++lEjNvsQOeyUJC+/lVp6Sc9ogYgJXdhh7mHMMFznXkjnRL753OzMZS9i/zxCa/Ka+/oML75lOE/j1QPg=" -e SEATGEEK_API_KEY="Mjg1ODA0NTZ8MTY2MTA3MDAzNy4zMTE2OTcy" -e SEATGEEK_SECRET_API_KEY="ab4bb9ed60ccdf39c486760b29e4a00646a24007f6cc091e4d88399bcac39e38" -e OPENWEATHER_API_KEY="90a5fcdbfe63a6a832b34063adbbee98" -p 3000:3000 --platform linux/amd64 -t jasminehur238/demo
-
-docker build --platform=linux/amd64 -t jasminehur238/final1 .
-
-sudo docker login
-sudo docker pull jasminehur238/final1
-
-sudo docker run -e AWS_ACCESS_KEY_ID="ASIA5DYSEEJ44ZP2EEFK" -e AWS_SECRET_ACCESS_KEY="xmJtmHRbuoORJIyLfoPaROcOSPvSY6QOb5A6FFhH" -e AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEEMaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAMAr1Sxwi3vZnMxf4dIC+fd50XmIu/+jBLF+KW110oFhAiEAmNzJXMrd3YnLOXu4T1Og/+4KKAuutROchQBHGcHRIJ8quQMI/P//////////ARACGgw5MDE0NDQyODA5NTMiDHd73pXN7gMkG8zKEiqNA+XsJTId0bU1azfEoLNKpM9sxUnzIScUgcOZTrarIXMlRBV1n7sJK3geWBuWUSQdOiSbi4ku9hpW54yrSFza0PfiVdGaaCu3jHYl+jgWJFMGPH4JQ5L5c3OX4WTkDwQL/J7stvCi/l+/sT7u95CosZlO6pK8wyfY2OFjopFo39R7mu0eKWON7uotfJt13P4ELorD/Qbh4WetvG2Z83T7OfbwxFBsafbM8nPY4pT85SIir5tu5lNRJdWmcVKiWqZbugq27ySXP5SOFprNv25uA/JAcraZE6dZ5CdqN7tIy8nw0cIqw4ICVYbPXQQ2j8ybtQP3vuB95x5u0na2CAQr1qRnXcaqhLYyIWtSvL6xIF2EZFodFAl+VZt3crHEZ7wzCz1T9dB6y2DcaXL2CBMyMOgdTLZpTDcarCiiPmesYargKct4GS12PR8jpTeMtEa2pmWl0dAQAqz2VN9+soBeEYyADNyZwg46T7m+7CxnXXKkM1Ot+OEQrKgP8pOvMFkhPrnCx9HXt/zRYFSBKDkwwKn+mQY6pQH9P+J52l7G/RDCphou0Gm+uQ62pFD8jZL6Eiv9Pb659kpqhR3TGRpJdKNlQDQVL5kHJwmnlVYddTHBVfgVb7LQk3rhAHxJvFJMhLoFMtKWHWye0KjLzh6S3XVuWn4p7KcDCHABbxvbqh++lEjNvsQOeyUJC+/lVp6Sc9ogYgJXdhh7mHMMFznXkjnRL753OzMZS9i/zxCa/Ka+/oML75lOE/j1QPg=" -e SEATGEEK_API_KEY="Mjg1ODA0NTZ8MTY2MTA3MDAzNy4zMTE2OTcy" -e SEATGEEK_SECRET_API_KEY="ab4bb9ed60ccdf39c486760b29e4a00646a24007f6cc091e4d88399bcac39e38" -e OPENWEATHER_API_KEY="90a5fcdbfe63a6a832b34063adbbee98" -p 3000:3000 --platform linux/amd64 -t jasminehur238/final1 -->
+[Ubuntu]: https://img.shields.io/badge/Ubuntu-000000?style=for-the-badge&logo=ubuntu
+[Ubuntu-url]: https://ubuntu.com/
+[AWS]: https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazon
+[AWS-url]: https://aws.amazon.com/?nc2=h_lg
