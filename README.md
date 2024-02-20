@@ -7,7 +7,7 @@
     <img src="/images/Logo.png" alt="Logo"/>
   </a>
 
-  <h3 align="center">API Web Application (CAB432)</h3>
+  <h3 align="center">Cloud Computing (CAB432)</h3>
   </div>
 
 <!-- TABLE OF CONTENTS -->
